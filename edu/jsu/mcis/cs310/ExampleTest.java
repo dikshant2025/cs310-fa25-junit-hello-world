@@ -18,7 +18,14 @@ public class ExampleTest {
         expectedReverse2 = "elddiD elddiD yeH";
         expectedReverse3 = "kcoD yrokciD yrokciH";
     }
-        
+    @Test
+    public void testMyOwnReserve() {
+        String input = "Nepal";
+        String expected = "lapeN";
+        String actual = main.reverse(input);
+        assertEquals(expected, actual);
+    }
+    
     @Test
     public void testGreeting() {
         String actual = main.getGreeting();
@@ -48,5 +55,6 @@ public class ExampleTest {
         String actual = main.reverse("Hickory Dickory Dock");
         assertEquals(expectedReverse3, actual);
     }
+    
     
 }
